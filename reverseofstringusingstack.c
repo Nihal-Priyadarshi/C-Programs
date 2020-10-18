@@ -33,7 +33,7 @@ void Push( int x)
 
     if(S.TOP== SIZE-1)
     {
-        printf("stack overflow");
+        printf("Stack Overflow");
     exit (1);
     }
     S.TOP=S.TOP+1;
@@ -47,7 +47,7 @@ void Push( int x)
      if(Empty())
     {
 
-     printf("stack underflow");
+     printf("Stack Underflow");
      exit(1);
     }
      x=S.Item[S.TOP];
@@ -75,7 +75,7 @@ void Push( int x)
  void main()
 {
      char str[10];
-     printf("ENTER THE STRING");
+     printf("ENTER THE STRING: ");
      gets(str);
      rev(str);
 
