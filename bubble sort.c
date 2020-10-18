@@ -3,9 +3,9 @@
 {
     int a[20],i,n,j, temp;
 
-    printf("enter the no of element");
+    printf("ENTER THE NO OF ELEMENT");
     scanf("%d",&n);
-    printf("enter the element");
+    printf("ENTER THE ELEMENT");
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
@@ -22,7 +22,7 @@
         }
     }
     }
-         printf(" sorted element:");
+         printf(" SORTED ELEMENT:");
          for(i=0;i<n;i++)
     {
         printf(" %d",a[i]);
