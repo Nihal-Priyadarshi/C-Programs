@@ -75,7 +75,7 @@ void Push( int x)
  void main()
 {
      char str[10];
-     printf("enter the string");
+     printf("ENTER THE STRING");
      gets(str);
      rev(str);
 
