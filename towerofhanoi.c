@@ -18,7 +18,7 @@ void towerofhanoi( int n,char S, char M,char D)/*Source =S Middle =  M Destinati
 {
     int n;
     printf("/*Source =S Middle =  M Destination D  the disk*/ \n");
-    printf("ENTER  THE ELEMENT");
+    printf("ENTER  THE ELEMENT: ");
     scanf("%d",&n);
 
     towerofhanoi(n,'S','M','D');
