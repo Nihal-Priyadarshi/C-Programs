@@ -9,7 +9,7 @@ void main()
     int i, j, k;
     char str[100];
     char *rev;
-    printf("Enter the string:\t");
+    printf("Enter the string: ");
     scanf("%s", str);
     printf("The original string is: %s\n", str);
     rev = reverse(str);
