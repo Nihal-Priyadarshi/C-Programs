@@ -1,8 +1,8 @@
 #include<stdio.h>
-void main()
+int main()
 {
 	int i,j,a[3][3],b[3][3], isSymmetric;
-	printf("write the element of matrix\n");
+	printf("Write the 9 element of matrix\n");
 	for(i=0;i<3;i++)
 	{
 		for(j=0;j<3;j++)
@@ -57,5 +57,5 @@ void main()
     {
         printf("\nThe given matrix is not Symmetric matrix.");
     }
-
+    return 0;
 }
