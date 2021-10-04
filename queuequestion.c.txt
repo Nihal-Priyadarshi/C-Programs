@@ -1,0 +1,71 @@
+//given a queue and a int k , print all the numbers greater than k
+
+#include <stdio.h>
+int queue[100];
+int f=-1;
+int r=-1;
+
+void enqueue(int n,int item){
+    // printf("%d ",item);
+    if(r>=n-1){
+        return;
+    }
+    if(f==-1 && r==-1){
+        f=f+1;
+        r=r+1;
+        queue[r]=item;
+        
+        // printf("%d inintial \n",item);
+    }
+    else{
+        if(r<n-1){
+        r=r+1;
+        queue[r]=item;
+    
+            
+        }
+        
+    }
+    
+}
+
+int dequeue(int n){
+    if((f==-1 && r==-1)||(f>r)){
+        return -1;
+    }
+    return queue[f++];
+    
+}
+int main(){
+    
+    
+    int n;
+    int x;
+    scanf("%d",&n);
+    // printf("%d",f);
+    for (int i=0;i<n;i++){
+        
+        scanf("%d",&x);
+        // printf("%d\n",x);
+        enqueue(n,x);
+        
+        
+    }
+   
+   
+    int p;
+    int c=0;
+    scanf("%d",&p);
+    for(int i=0;i<n;i++){
+        x=dequeue(n);
+        if(x>p){
+            c=1;
+            printf("%d ",x);
+        }
+    }
+    
+    if(c==0){
+        printf("no");
+    }
+
+// by Mohammed Aadils
