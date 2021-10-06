@@ -27,8 +27,17 @@ void printArray(int arr[], int size)
  
 int main()
 {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr)/sizeof(arr[0]);
+    // int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    // int n = sizeof(arr)/sizeof(arr[0]);
+    int n;
+    printf("Enter the size of the array\n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the elements for the array\n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
     bubbleSort(arr, n);
     printf("Sorted array: \n");
     printArray(arr, n);
