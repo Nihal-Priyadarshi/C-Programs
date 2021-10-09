@@ -1,5 +1,5 @@
 /**
- * Queue Data Structure with Linked List
+ * Queue Data Structure
  * @author Ramon Almeida
  * @date 2021-10-09
  */
