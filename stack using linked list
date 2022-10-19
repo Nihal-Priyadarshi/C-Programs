@@ -1,0 +1,107 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define MAX 5
+
+typedef struct node
+{
+	int data;
+	struct node *next;
+}node;
+
+node *top;
+
+void push()
+{
+	int num;
+	node *temp;
+	printf("\n Enter the number : ");
+	scanf("%d",&num);
+	temp=(node*)malloc(sizeof(node));
+	temp->data=num;
+	temp->next=NULL;
+	
+	if(top==NULL)
+	 top=temp;
+	else
+	{
+		temp->next=top;
+		top=temp;
+	}
+	
+}
+
+void pop()
+{
+	if(top==NULL)
+	 printf("\n U N D E R F L O W");
+	else
+	{
+	 printf("\n Delete element %d ",top->data);
+	 top=top->next;
+	}
+}
+void peep()
+{
+	if(top==NULL)
+	 printf("\n Empty stack");
+	else
+	{
+		printf("\n Top most element %d",top->data);
+	}
+}
+void display()
+{
+	node *ptr;
+	if(top==NULL)
+	 printf("\n Empty stack");
+	else
+	 {
+	 	ptr=top;
+	 	while(ptr!=NULL)
+	 	{
+	 	   printf("\n %d",ptr->data);
+	 	   ptr=ptr->next;
+		}
+	 }
+}
+int main()
+{
+	
+	int ch;
+	top=NULL; // initialize
+	while(1)
+	{
+		printf("\n 1 for PUSH ");
+		printf("\n 2 for POP ");
+		printf("\n 3 for PEEP");
+		printf("\n 4 for DISPLAY ");
+		printf("\n 5 for EXIT ");
+		printf("\n Enter the choice ");
+		scanf("%d",&ch);
+		
+		switch(ch)
+		{
+			case 1:
+			push();
+			break;
+			
+			case 2:
+			pop();
+			break;
+			
+			case 3:
+			peep();
+			break;
+			
+			case 4:
+			display();
+			break;
+			
+			case 5:
+			exit(1);
+			
+			default:
+			printf("\n Oops! Wrong choice ");
+		}
+	}
+}
