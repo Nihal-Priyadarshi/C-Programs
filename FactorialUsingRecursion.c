@@ -11,4 +11,5 @@ int main(){
   scanf("%d",&n);
   
   printf("FACTORIAL IS : %d",fact(n));
+  return 0;
 }
