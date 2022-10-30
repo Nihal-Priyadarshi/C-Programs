@@ -3,10 +3,10 @@
 int main()
 {
     int i,j,x,y;
-    printf("*** Welcome to 2D array ***");
-    printf("\nHow many rows :  ");
+    printf("*** Welcome to 2 Dimensionel array ***");
+    printf("\nHow many rows in the array:  ");
     scanf("%d", &x);
-    printf("\nHow many columns :  ");
+    printf("\nHow many columns in the array:  ");
     scanf("%d", &y);
     int arr[x][y];
     printf("\nYou have selected %d rows and %d columns ", x,y);
